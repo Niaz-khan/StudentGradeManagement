@@ -17,7 +17,10 @@ class Student:
             ob_numbers = input("enter your numbers/(Q to exit):) ".upper())
             if ob_numbers.lower() == "q":
                 break
-            self.st_grades.append(ob_numbers)
+            try:
+                self.st_grades.append(int(ob_numbers))
+            except Exception as e:
+                print("Error:", e)
 
     def calculate_average(self):
         sum_of_grades = sum(self.st_grades)

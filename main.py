@@ -17,3 +17,6 @@ def main():
                 break
             case _:
                 print("\nchose from the above\n".upper())
+
+
+main()
