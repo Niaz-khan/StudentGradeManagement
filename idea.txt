@@ -1,0 +1,4 @@
+Create a class `Student` with attributes for name, grades (a list), and methods to add grades, calculate
+average, and
+determine the letter grade.
+Implement a function to handle user input for adding grades and calculating the results.
