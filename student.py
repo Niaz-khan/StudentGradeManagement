@@ -13,7 +13,7 @@ class Student:
 
     def add_grades(self):
         name = input("enter the name of the student:) ".upper())
-        for _ in range(7):
+        for _ in range(6):
             ob_numbers = input("enter your numbers/(Q to exit):) ".upper())
             if ob_numbers.lower() == "q":
                 break

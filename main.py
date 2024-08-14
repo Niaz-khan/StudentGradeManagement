@@ -10,7 +10,8 @@ def main():
             case "1":
                 student.add_grades()
             case "2":
-                student.calculate_average()
+                ave = student.calculate_average()
+                print("The average:", ave)
             case 'q':
                 break
             case 'Q':
