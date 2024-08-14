@@ -14,8 +14,13 @@ class Student:
     def add_grades(self):
         name = input("enter the name of the student:) ".upper())
         for _ in range(7):
-            ob_numbers = input("enter your numbers:) ".upper())
+            ob_numbers = input("enter your numbers/(Q to exit):) ".upper())
+            if ob_numbers.lower() == "q":
+                break
             self.st_grades.append(ob_numbers)
 
     def calculate_average(self):
-        pass
+        sum_of_grades = sum(self.st_grades)
+        average = sum_of_grades/len(self.st_grades)
+        return average
+
